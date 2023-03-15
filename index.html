@@ -3,149 +3,130 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
         <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <script src="https://kit.fontawesome.com/52582c7c01.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <img src="./images/logo.svg" alt="Huddle-Logo" class="logo">
-            <a href="#" class="header-btn btn">Try It Free</a>
+            <a href="#" aria-labelledby="Home-Huddle"><img src="./assets/images/logo.svg" alt="Huddle" class="header__logo logo"></a>
+            <a href="#" class="header__btn btn btn--white growOnHover">Try It Free</a>
         </header>
         <main>
             <section class="hero">
                 <div class="hero-text">
-                    <h1 class="hero-h">Build The Community Your Fans Will Love</h1>
-                    <p class="hero-p p1">
+                    <h1 class="hero-text__title">Build The Community Your Fans Will Love</h1>
+                    <p class="hero-text__paragraph">
                         Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
                         Create connections with your users as you engage in genuine discussion.
                     </p>
-                    <a href="#" class="hero-btn btn">Get Started For Free</a>
+                    <a href="#" class="hero-text__btn btn btn--pink growOnHover">Get Started For Free</a>
                 </div>
-                <img src="./images/illustration-mockups.svg" alt="" class="hero-image">
+                <img src="./assets/images/illustration-mockups.svg" alt="" class="hero-image">
             </section>
-            <section class="body-section">
-                <section class="card card1">
-                    <img src="./images/illustration-grow-together.svg" alt="illustration-grow-together" class="card-image">
-                    <div class="card-text">
-                        <h2 class="card-text-h">Grow Together</h2>
-                        <p class="card-text-p p2">
+            <section class="features">
+                <h2 class="sr-only">List of Huddle Features</h2>
+                <div class="features__card features__card-one growOnHover">
+                    <img src="./assets/images/illustration-grow-together.svg" alt="illustration-grow-together" class="features__card-image">
+                    <div class="features__card-text">
+                        <h2 class="features__card-title">Grow Together</h2>
+                        <p class="features__card-paragraph">
                             Generate meaningful discussions with your audience and build a strong, loyal community. 
                             Think of the insightful conversations you miss out on with a feedback form.
                         </p>
                     </div>
-                </section>
-                <section class="card card2">
-                    <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation" class="card-image">
-                    <div class="card-text">
-                        <h2 class="card-text-h">Flowing Conversations</h2>
-                        <p class="card-text-p p2">
+                </div>
+                <div class="features__card features__card-two growOnHover">
+                    <img src="./assets/images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation" class="features__card-image">
+                    <div class="features__card-text">
+                        <h2 class="features__card-title">Flowing Conversations</h2>
+                        <p class="features__card-paragraph">
                             You wouldn't paginate a conversation in real life, so why do it online? Our threads 
                             have just-in-time loading for a more natural flow.
                         </p>
                     </div>
-                </section>
-                <section class="card card3">
-                    <img src="./images/illustration-your-users.svg" alt="illustration-your-users" class="card-image">
-                    <div class="card-text">
-                        <h2 class="card-text-h">Your Users</h2>
-                        <p class="card-text-p p2">
+                </div>
+                <div class="features__card features__card-three growOnHover">
+                    <img src="./assets/images/illustration-your-users.svg" alt="illustration-your-users" class="features__card-image">
+                    <div class="features__card-text">
+                        <h2 class="features__card-title">Your Users</h2>
+                        <p class="features__card-paragraph">
                             It takes no time at all to integrate Huddle with your app's authentication solution. 
                             This means, once signed in to your app, your users can start chatting immediately.
                         </p>
                     </div>
-                </section>
+                </div>
             </section>
         </main>
-
         <footer>
-
-            <section class="footer-top">
-                <h2 class="footer-top-h">Ready To Build Your Community?</h2>
-                <a href="#" class="footer-top-btn btn">Get Started For Free</a>
+            <section class="footer-top growOnHover">
+                <h2 class="footer-top__title">Ready To Build Your Community?</h2>
+                <a href="#" class="footer-top__btn btn btn--pink growOnHover">Get Started For Free</a>
             </section>
-
-            <h2 class="sr-only">Footer containing Site Information, Navigation Links and Social Media Links</h2>
-
             <section class="footer-main">
-
-                <section class="footer-info">
-
+                <h2 class="sr-only">Footer containing Site Information, Navigation Links and Social Media Links</h2>
+                <section class="information">
                     <h3 class="sr-only">Site Information</h3>
-
-                    <img src="./images/logo.svg" alt="Footer-logo" class="footer-logo">
-                    <address>
-                        <div class="address-list location">
-                            <img src="./images/icon-location.svg" class="address-list-icon address-list-icon1" alt="">
-                            <p class="address-list-p p2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                incididunt ut labore et dolore magna aliqua
-                            </p>
-                        </div>
-                        <div class="address-list phone">
-                            <img src="./images/icon-phone.svg" class="address-list-icon address-list-icon2" alt="">
-                            <p class="address-list-p p2">+1-543-123-4567</p>
-                        </div>
-                        <div class="address-list email">
-                            <img src="./images/icon-email.svg" class="address-list-icon address-list-icon3" alt="">
-                            <p class="address-list-p p2">example@huddle.com</p>
-                        </div>
+                    <a href="#" aria-labelledby="Home-Huddle"><img src="./assets/images/logo.svg" alt="Huddle" class="information__logo logo logo--light"></a>
+                    <address class="information__address">
+                        <p class="information__location">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua
+                        </p>
+                        <a href="#" class="information__phone">+1-543-123-4567</a>
+                        <a href="#" class="information__email">example@huddle.com</a>
                     </address>
-
-                </section>
-                
-                <section class="footer-nav">
-                    <h3 class="sr-only">Links</h3>
-                    <nav class="footer-nav">
-                        <ul class="nav-list" role="list">
-                            <li class="nav-link nav-link1" role="listitem">
-                                <a href="#" class="p1">About Us</a>
+                </section>                
+                <section class="nav-links">
+                    <h3 class="sr-only">Navigation Links</h3>
+                    <nav>
+                        <ul class="nav-links__list">
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">About Us</a>
                             </li>
-                            <li class="nav-link nav-link2" role="listitem">
-                                <a href="#" class="p1">What We Do</a>
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">What We Do</a>
                             </li>
-                            <li class="nav-link nav-link3" role="listitem">
-                                <a href="#" class="p1">FAQ</a>
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">FAQ</a>
                             </li>
-                            <li class="nav-link nav-link4" role="listitem">
-                                <a href="#" class="p1">Career</a>
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">Career</a>
                             </li>
-                            <li class="nav-link nav-link5" role="listitem">
-                                <a href="#" class="p1">Blog</a>
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">Blog</a>
                             </li>
-                            <li class="nav-link nav-link6" role="listitem">
-                                <a href="#" class="p1">Contact Us</a>
+                            <li class="nav-links__listitem">
+                                <a href="#" class="nav-links__reference">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
                 </section>
-
-                <section class="social-links">
-                    <h3 class="sr-only">Social Links</h3>
-                    <ul class="social-links-list">
-                        <li class="social-links-listitem">
-                            <a href="#" class="social-icon" aria-label="Facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
+                <section class="social-media">
+                    <h3 class="sr-only">Social-Media Links</h3>
+                    <ul class="social-media__list">
+                        <li>
+                            <a href="#" class="social-media__link iconOnHover" aria-label="Facebook">
+                                <img src="./assets/images/facebook-f.svg" class="icon">
                             </a>
                         </li>
-                        <li class="social-links-listitem">
-                            <a href="#" class="social-icon" aria-label="Twitter">
-                                <i class="fa-brands fa-twitter"></i>
+                        <li>
+                            <a href="#" class="social-media__link iconOnHover" aria-label="Twitter">
+                                <img src="./assets/images/twitter.svg" class="icon">
                             </a>
                         </li>
-                        <li class="social-links-listitem">
-                            <a fa-stack href="#" class="social-icon" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
+                        <li>
+                            <a fa-stack href="#" class="social-media__link iconOnHover" aria-label="Instagram">
+                                <img src="./assets/images/instagram.svg" class="icon">
                             </a>
                         </li>
                     </ul>
-                    <p class="Copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+                    <p class="copyright">&copy; Copyright 2018 Huddle. All rights reserved.</p>
                 </section>
-
             </section>
-
         </footer>
     </body>
 </html>
