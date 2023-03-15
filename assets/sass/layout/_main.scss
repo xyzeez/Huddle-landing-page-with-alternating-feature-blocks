@@ -1,0 +1,8 @@
+@use '../globals' as *;
+@use '../components' as *;
+
+main {
+    @include flex (column);
+    align-items: center;
+    justify-content: center;    
+}

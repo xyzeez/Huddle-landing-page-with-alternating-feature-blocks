@@ -1,0 +1,43 @@
+@use '../globals/variables' as *;
+@use './breakpoints' as *;
+@use '../components/mixins' as *;
+
+.btn {
+    font-family: $open-sans;
+    font-size: 1rem;
+    font-weight: $bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 
+        0px 0px 20px -8px rgb(0 0 0 / 10%),
+        0px 0px 20px -8px rgb(0 0 0 / 10%);
+
+    @include breakpoint ("tablet+") {
+        border-radius: 3rem;
+    }
+
+    &:hover {
+        box-shadow:
+            0 14px 28px rgba(0,0,0,0.25),
+            0 10px 10px rgba(0,0,0,0.22);
+    }
+}
+
+.btn--white {
+    color: $dark-cyan;
+    background-color: $white;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.btn--pink {
+    color: $white;
+    background-color: $pink;
+
+    &:hover {
+        background-color: $dark-pink;
+    }
+}

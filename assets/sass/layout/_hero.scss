@@ -1,0 +1,96 @@
+@use '../globals' as *;
+@use '../components' as *;
+
+.hero {
+    @include flex (column);
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    padding: 8rem 1rem 4rem;
+    background-color: $pale-cyan;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    @include breakpoint (tablet) {
+        background-image: url(../images/bg-hero-desktop.svg);
+        padding: 10rem 3rem 4rem;
+    }
+
+    @include breakpoint (desktop) {
+        @include flex (row);
+        padding: 10rem 5rem 4rem;
+    }
+
+    &-text {
+        @include flex (column);
+        align-items: center;
+        text-align: center;
+        max-width: 30rem;
+
+        @include breakpoint (tablet) {
+            max-width: 100%;
+        }
+
+        @include breakpoint (desktop) {
+            max-width: 45%;
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &__title {
+            font-family: $header-text;
+            font-size: 1.6rem;
+            font-weight: $bold;
+            max-width: 20rem;
+
+            @include breakpoint (tablet) {
+                font-size: 2.3rem;
+                padding-top: 2rem;
+                max-width: 30rem;
+            }
+
+            @include breakpoint (desktop) {
+                font-size: 2.5rem;
+            }
+        }
+
+        &__paragraph {
+            font-family: $paragraph-text;
+            font-size: 1rem;
+            font-weight: $normal;
+            margin: 2.5rem 0;
+            max-width: 35rem;
+
+            @include breakpoint (tablet) {
+                font-size: 1.125rem;
+            }
+        }
+
+        &__btn {
+            width: 17.5rem;
+            padding: 0.8rem 1.5rem;
+
+            @include breakpoint (desktop) {
+                font-size: 0.9rem;
+                padding: 1.2rem 1.5rem;
+            }
+        }
+    }
+
+    &-image {
+        width: 100%;
+        padding: 0 1rem;
+        max-width: 50rem;
+
+        @include breakpoint (tablet) {
+            margin: 1rem;
+        }
+
+        @include breakpoint (desktop) {
+            width: 55%;
+            padding: 0;
+        }
+    }
+}

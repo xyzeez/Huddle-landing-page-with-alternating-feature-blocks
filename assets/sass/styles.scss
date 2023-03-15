@@ -1,0 +1,10 @@
+//global styles
+@use 'globals';
+
+//styles for layouts
+@use 'layout';
+
+//styles for components
+@use 'components';
+@import './components/animations';
+

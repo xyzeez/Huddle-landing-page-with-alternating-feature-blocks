@@ -1,0 +1,12 @@
+$device: (
+    "mobile": 400px,
+    "tablet": 700px,
+    "tablet+": 980px,
+    "desktop": 1200px,
+);
+
+@mixin breakpoint ($size) {
+    @media screen and (min-width: map-get($device, $size)) {
+        @content
+    }
+}

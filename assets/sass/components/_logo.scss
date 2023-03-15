@@ -1,0 +1,12 @@
+@use '../globals' as *;
+@use './mixins' as *;
+@use './breakpoints' as *;
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.logo--light {
+    filter: brightness(0) invert(1);
+}

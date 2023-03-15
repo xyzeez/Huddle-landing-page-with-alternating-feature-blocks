@@ -1,0 +1,132 @@
+//hover-Animations
+.growOnHover {
+    transition: all 0.3s ease-out;
+}
+
+.growOnHover:hover {
+    transform: scale(1.015);
+}
+
+.iconOnHover {
+    transition: all 0.3s ease-out;
+}
+
+.iconOnHover:hover {
+    transform: scale(1.15);
+}
+
+ /*Entrance Animations*/
+ header {
+    animation: header-entrance 1s ease;
+  }
+
+  @keyframes header-entrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+  }
+
+  .hero-text {
+    animation: hero-text-entrance 1s ease;
+  }
+
+  @keyframes hero-text-entrance {
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+  }
+
+  .hero-image {
+    animation: hero-image-entrance 1s ease;
+  }
+
+  @keyframes hero-image-entrance {
+
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    
+  }
+
+  .features__card {
+    animation: features__card-entrance 1s ease;
+  }
+
+  @keyframes features__card-entrance {
+
+    0% {
+      opacity: 0;
+      -webkit-transform: rotateX(60deg);
+      transform: rotateX(60deg)
+    }
+
+    30% {
+      opacity: 0;
+    }
+    
+  }
+
+  .footer-top {
+    animation: footer-top-entrance 1s ease;
+  }
+
+  @keyframes footer-top-entrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    
+  }
+
+  .footer-main {
+    animation: icon-entrance 1s ease;
+  }
+
+  @keyframes icon-entrance {
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    
+  }
+
+  body {
+    animation: body 2s;
+  }
+
+  @keyframes body {
+
+    0% {
+        overflow-x: hidden;
+    }
+    
+  }
+
+  @media (prefers-reduced-motion) {
+
+     body,
+     header,
+     .hero-text,
+     .hero-image,
+     .features__card,
+     .footer-top,
+     .footer-main
+         {
+        animation-play-state: paused;
+      }
+    
+  }
