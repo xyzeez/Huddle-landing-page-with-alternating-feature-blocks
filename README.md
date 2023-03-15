@@ -1,13 +1,15 @@
 # Frontend Mentor - Huddle landing page with alternating feature blocks solution
 
+![](./assets/images/screenshots/desktop-preview.jpg)
+
 This is a solution to the [Huddle landing page with alternating feature blocks challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100).
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -23,17 +25,16 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot
-
-![](./images/screenshots/Desktop.png)
-![](./images/screenshots/Tablet.png)
-![](./images/screenshots/mobile.png)
-
 
 ### Links
 
 - Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-with-alternating-feature-blocks-t2dYISbenx)
 - Live Site URL: [Click here](https://huddlelandingpagewithalternating-femc.netlify.app/)
+
+### Screenshot
+
+- [Moblie](./assets/images/screenshots/mobile.png)
+- [Desktop](./assets/images/screenshots/desktop.png)
 
 ## My process
 
@@ -43,14 +44,16 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- SASS
+- BEM
+- Animation
 
 ### Useful resources
 
-- [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html)
-- [Font Awesome Icons](https://fontawesome.com/)
-- [Inclusively Hidden: Blog Post](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
-- [CSS filter Property](https://www.w3schools.com/cssref/css3_pr_filter.php)
-- [Google Fonts](https://fonts.google.com/)
+- [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
+- [SASS](https://sass-lang.com/documentation/)
+- [Sass and BEM for beginners - Coder Coder](https://www.youtube.com/watch?v=jfMHA8SqUL4&t=6674s)
+- [@use and @forward explained - Kelvin Powell](https://www.youtube.com/watch?v=CR-a8upNjJ0)
 
 
 ## Author
